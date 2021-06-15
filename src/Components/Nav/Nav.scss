@@ -1,0 +1,40 @@
+.nav {
+  background-color: rgba(var(--d87, 255, 255, 255), 1);
+  border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  position: fixed;
+  z-index: 10;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  h1 {
+    position: relative;
+    right: 60%;
+  }
+  .nav-profile-container {
+    width: 15%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .nav-profile-pic {
+      width: 26%;
+      height: 70%;
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+    }
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    width: 15%;
+    height: 50%;
+    .nav-img {
+      width: 50%;
+      height: 50%;
+      color: black;
+    }
+  }
+}
