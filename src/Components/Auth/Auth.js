@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import {connect} from 'react-redux';
 import {updateUser} from '../../redux/reducer'
+import './Auth.scss'
 
 
 class Auth extends Component {
