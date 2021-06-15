@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
 import {Link} from 'react-router-dom'
+import './Dash.scss'
 class Dash extends Component {
     constructor(props) {
       super(props);
@@ -80,7 +81,7 @@ class Dash extends Component {
       
       return (
         <div className='dash'>
-          <div className='content-box dash-filter'>
+          <div className='dash-filter'>
             <div className='dash-search-box'>
               <input value={search} onChange={e => this.setState({ search: e.target.value })} className='dash-search-bar' placeholder='Search by Title' />
               <button onClick={this.grabPosts} className='dark-button'>Search</button>
@@ -95,7 +96,7 @@ class Dash extends Component {
               <input checked={oldestFirst} onChange={_ => this.setState({ oldestFirst: !oldestFirst }, this.grabPosts)} type='checkbox' />
             </div>
           </div>
-          <div className='content-box dash-posts-container'>
+          <div className='dash-posts-container'>
             {!loading
               ?
               mappedPosts

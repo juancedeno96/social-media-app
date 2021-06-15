@@ -1,11 +1,13 @@
 .auth{
     height: 100vh;
     width: 100vw;
-    background-color: #cbe6d8;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+
 
     .auth-container{
-        color: white;
-        background-image: linear-gradient(#3B413C 40%,#94D1BE , #DAF0EE);
+        color: black;
+        background-color: rgba(var(--d87, 255, 255, 255), 1);
+  border: 1.5px solid rgba(var(--b6a,219,219,219),1);
         position: relative;
         width: 40%;
         height: 70%;
@@ -15,7 +17,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        box-shadow: #282c29 5px 3px 2px;
 
         .auth-input-box{
             width: 50%;
@@ -40,7 +41,6 @@
         .dark-button{
             width: 5rem;
             height: 2rem;
-
             &:hover{
                 background-color: black;
                 color: white;
