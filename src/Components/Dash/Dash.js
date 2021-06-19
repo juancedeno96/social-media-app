@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import { faSync } from "@fortawesome/free-solid-svg-icons";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
@@ -71,9 +71,17 @@ class Dash extends Component {
       return (
         <div className="content-box dash-post-box" key={post.post_id}>
           {post.author_username === this.props.username ? (
-            <button onClick={(_) => this.deletePost(post.post_id)}>
-              delete your post
-            </button>
+             <div className="author-box">
+             <img
+               className="post-author-img"
+               src={post.profile_pic}
+               alt="author"
+             />
+             <p>by {post.author_username}</p>
+  
+             <FontAwesomeIcon className='trash' icon={faTrashAlt} onClick={(_) => this.deletePost(post.post_id)}/>
+           </div>
+           
           ) : (
             <div className="author-box">
               <img
