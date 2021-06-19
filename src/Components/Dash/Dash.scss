@@ -38,6 +38,8 @@
   }
 
   .dash-posts-container {
+    .dash-post-box{
+    }
   border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
     width: 50vw;
     height: 80vh;
@@ -46,10 +48,14 @@
     top: 20%;
     .author-box {
     background-color: rgba(var(--d87, 255, 255, 255), 1);
-
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      .trash{
+        position:relative;
+        left: 75% ;
+
+      }
       .post-author-img {
         margin-left: 10px;
         margin-right: 20px;
@@ -63,7 +69,6 @@
     }
     .post-title{
       width: 100%;
-      border-style: solid;
       height: 8%;
       display: flex;
       justify-content: flex-start;
@@ -79,7 +84,7 @@
     align-items: center;
     height: 32rem;
     img{
-      height: 80%;
+      height: 100%;
       width: 100%;
       background-size: cover;
         background-position: center;
