@@ -61,7 +61,7 @@ class Auth extends Component {
     return (
       <div className='auth'>
         <div className='auth-container'>
-          <h1 className='auth-title'>Tale</h1>
+          <h1 className='auth-title'>Welcome to Tale</h1>
           {this.state.errorMsg && <h3 className='auth-error-msg'>{this.state.errorMsg} <span onClick={this.closeErrorMessage}>X</span></h3>}
           <div className='auth-input-box'>
             <p>Username:</p>
