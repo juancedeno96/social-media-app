@@ -38,4 +38,29 @@
       color: black;
     }
   }
+  @media screen and (max-width: 768px) {
+    h1 {
+      position: relative;
+      right: 50%;
+      font-size: 45px;
+    }
+  .nav-profile-container {
+    .nav-profile-pic{
+      width: 60%;
+      height: 70%;
+    }
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 50%;
+    .nav-img {
+      width: 75%;
+      height: 75%;
+      color: black;
+    }
+  }
+  }
+
 }
