@@ -34,7 +34,6 @@
 
   .dash-posts-container {
     border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
-
     width: 50vw;
     height: 80vh;
     position: relative;
@@ -84,6 +83,55 @@
       width: 100%;
       background-size: cover;
       background-position: center;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .dash-filter {
+      height: 10%;
+      left: 2.5%;
+      width: 95%;
+
+      .dash-search-box {
+        display: inherit;
+        width: 60%;
+        left: 5px;
+        justify-content: flex-end;
+        .dark-button {
+          width: 40%;
+          height: 45%;
+        }
+        .dash-search-bar {
+          width: 50%;
+          height: 40%;
+        }
+      }
+      .dash-check-box {
+        width: 18%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+          font-size: 20px;
+        }
+        input {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+  .dash-posts-container {
+    width: 70vw;
+    height: 85vw;
+    left: 15%;
+    .author-box {
+      .trash {
+        width: 30px;
+        height: 25px;
+        position: relative;
+        left: 70%;
+      }
     }
   }
 }
