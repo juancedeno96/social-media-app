@@ -13,9 +13,38 @@
     width: 75%;
     height: 80%;
     left: 12.5%;
+    .dark-button {
+      width: 80px;
+      position: relative;
+      top: 3px;
+      height: 30px;
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
     .form-img-prev {
       width: 20%;
       height: 40%;
+      border-style: solid;
+      border-width: 0.3px;
+      position: relative;
+      top: 0.8rem;
+    }
+  }
+}
+//Media Query
+@media screen and (max-width: 768px) {
+  .Form {
+    .form-content-box {
+      .form-img-prev {
+        width: 50%;
+        height: 35%;
+        border-style: solid;
+      }
+      input {
+        height: 22px;
+      }
     }
   }
 }
