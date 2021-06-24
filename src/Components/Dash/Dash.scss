@@ -42,13 +42,14 @@
     .author-box {
       background-color: rgba(var(--d87, 255, 255, 255), 1);
       border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
-
       display: flex;
       justify-content: flex-start;
       align-items: center;
       .trash {
         position: relative;
         left: 75%;
+        width: 25px;
+        height: 25px;
       }
       .post-author-img {
         margin-left: 10px;
@@ -120,18 +121,21 @@
         }
       }
     }
-  }
-  .dash-posts-container {
-    width: 70vw;
-    height: 85vw;
-    left: 15%;
-    .author-box {
-      .trash {
-        width: 30px;
-        height: 25px;
-        position: relative;
-        left: 70%;
+    .dash-posts-container {
+      width: 70vw;
+      height: 85vw;
+      left: 15%;
+      .author-box {
+        .trash {
+          width: 30px;
+          height: 25px;
+          position: relative;
+          left: 70%;
+          width: 23px;
+          height: 23px;
+        }
       }
     }
   }
+  
 }
